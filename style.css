@@ -1,0 +1,123 @@
+body{
+  margin: 10px;
+  padding: 50px;
+  background-color: #4F5B2A;
+  justify-items: center;
+}
+
+.con{
+  font-size: x-large;
+  font-family: cursive;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: tan;
+  border: inset;
+  border-radius: 50px;
+  margin: 100px;
+  padding: 50px;
+}
+
+.con a{
+  text-decoration: none;
+  font-family: monospace;
+  background-color: #9D6638;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border: double;
+  border-radius: 10px;
+  display: inline-block;
+  animation: shake 0.5s infinite;
+}
+
+.con a:hover{
+  background-color: #B34A44;
+  cursor: pointer;
+}
+
+.mes{
+  font-family: Georgia;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: tan;
+  border: inset;
+  border-radius: 50px;
+  margin: 100px;
+  padding: 30px;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.mes img{
+  width: 220px;
+  height: 160px;
+  border: solid black;
+  border-radius: 20%;
+  opacity: 0;
+  animation: fadeInRight 1s ease forwards;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.mes img:hover{
+  transform: scale(1.20);
+}
+
+.mes h2{
+  font-family: cursive;
+  display: inline-block;
+  animation: rotateFull 1s linear;
+}
+
+.mes p{
+  color: Black;
+  border-style: double;
+  border-radius: 20px; 
+  background-color: #E8A07C;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8;
+  padding: 10px;
+  margin: 10px;
+}
+
+.mes h5{
+  color: black;
+  font-family: monospace; 
+  text-decoration: underline;
+}
+
+.music{
+  display: inline-block;
+  animation: slightBounce 0.8s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInRight {
+  0% { opacity: 0; transform: translateX(-25px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+}
+
+@keyframes slightBounce {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+@keyframes rotateFull {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
